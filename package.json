@@ -38,7 +38,7 @@
     "express": "^4.21.2",
     "fhirclient": "^2.5.2",
     "lucide-react": "^0.475.0",
-    "next": "13.4.13",
+    "next": "14.2.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-table": "^7.7.0",
