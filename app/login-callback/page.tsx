@@ -4,9 +4,6 @@ import { useRouter } from 'next/navigation';
 import FHIR from 'fhirclient';
 import Client from 'fhirclient/lib/Client';
 import { AppContext } from '@/lib/hooks/AppContext/AppContext';
-import Image from 'next/image';
-import { Loader2 } from 'lucide-react';
-import { Card } from '@/components/ui/card';
 import Loading from '@/lib/components/Loading';
 
 interface IPage {
@@ -51,8 +48,8 @@ export default function Page(props: IPage) {
 				);
 				appContext.setIdToken(client.state.tokenResponse?.id_token ?? '');
 
-				// Redirect to /patient-sphere/patient/patient-details...
-				router.push('/patient-sphere/patient/patient-details');
+				// Redirect to /clinic/patient/patient-details...
+				router.push('/clinic/patient/patient-details');
 			})
 			.catch(console.error);
 	}, [appContext]);

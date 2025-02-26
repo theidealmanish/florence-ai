@@ -10,9 +10,6 @@ export default function Logo(props: any) {
 				className='rounded-lg'
 				style={{ maxHeight: '50px' }}
 			/>
-			<Text weight={500} style={{ paddingLeft: '10px' }} size='lg'>
-				Patient Sphere
-			</Text>
 		</Center>
 	);
 }
